@@ -35,7 +35,7 @@ public class TicketManager {
     }
 
     // Cancels a ticket by looking it up by id
-    public boolean cancellTicket(int id) {
+    public boolean cancelTicket(int id) {
         Ticket ticket = _ticketBook.findById(id);
         if (ticket == null) {
             System.out.println("Cancel failed: Ticket #" + id + " not found.");
